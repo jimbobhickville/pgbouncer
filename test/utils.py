@@ -971,7 +971,7 @@ class Bouncer(QueryRunner):
                 ini.write(f"listen_port = {self.port}\n")
 
                 ini.flush()
-            
+
         with self.ini_path.open("r") as ini:
             self.original_ini_contents = ini.read()
 
